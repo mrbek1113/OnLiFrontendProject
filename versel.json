@@ -1,21 +1,16 @@
 {
-    "version":2,
-    "builds":[
-        {
-            "src":"src/main.ts",
-            "use":"@versel/node"
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
     ],
-    "routes":[
-        {
-            "src":"/(/*)",
-            "dest":"src/main.ts",
-            "methods":[
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE"
-            ]
-        }
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
     ]
-}
+  }
+  
