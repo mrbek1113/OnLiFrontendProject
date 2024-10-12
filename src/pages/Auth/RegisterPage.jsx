@@ -10,7 +10,7 @@ const RegisterPage = () => {
   const [error, setError] = useState('');
   const [redirectTo, setRedirectTo] = useState(null);
 console.log(name+" "+surname+" "+ username+" "+password);
-  const url = 'http://localhost:4000/register';
+  const url = 'https://on-li-backend.vercel.app/register';
 
   const PostData = async () => {
     try {
