@@ -13,7 +13,7 @@ const AdminPage = () => {
   const [productImg, setProductImg] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  const url = "http://localhost:4000/products";
+  const url = "https://on-li-backend.vercel.app/products";
 
   useEffect(() => {
     axios.get(url).then((res) => setData(res.data));
